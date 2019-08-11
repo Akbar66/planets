@@ -24,7 +24,7 @@ rand.df
 ```{r}
 ggplot(rand.df, aes(x=x.rand, y=y.rand)) +
     geom_point() +
-    geom_smooth(method=lm, color="blue", fill="orange")
+    geom_smooth(method=lm, color="lemonchiffon4", fill="goldenrod1")
 ```
 
 # Session Info
