@@ -1,0 +1,16 @@
+---
+title: "Challenge_1, Part 2"
+author: "Akbar Bahrami"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Comparing City and Highway Fuel Efficiency
+```{r}
+library(ggplot2)
+ggplot(mpg, aes(cty, hwy, color = class)) + 
+  geom_point()
+
+```
+
