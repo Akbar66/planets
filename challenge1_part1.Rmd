@@ -1,0 +1,35 @@
+---
+title: "Challenge 1, Part 1"
+author: "Akbar Bahrami"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+subtitle: "Modifying an R Notebook"
+output: html_document
+---
+
+## Load Libraries
+```{r}
+library(ggplot2)
+```
+
+## Generate Random Data
+```{r}
+x.rand <- runif(20, 0, 100)
+y.rand <- 5*x.rand + rnorm(20, 0, 100)
+rand.df = data.frame(x.rand, y.rand)
+
+rand.df
+```
+
+## Plot Random Data
+```{r}
+ggplot(rand.df, aes(x=x.rand, y=y.rand)) +
+    geom_point() +
+    geom_smooth(method=lm, color="blue", fill="orange")
+```
+
+# Session Info
+Always print `sessionInfo` for reproducibility!
+```{r}
+sessionInfo()
+```
+
